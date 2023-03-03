@@ -6,7 +6,7 @@
 | -------------- | --- |
 | Student Names: |     |
 |Esohe Aideyan       |     |
-|Jack Barrie         |     |
+|Jack Barrie         |  30088832   |
 |Tamunomiete Brown   |     |
 |Dyenaan Dapoet      |  30126758   |
 
@@ -28,6 +28,7 @@ Text…
 Text…
 
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
+![Screenshot 2023-03-03 135330](https://user-images.githubusercontent.com/85323597/222856567-0f259f49-d16f-4a64-821f-fc64db85519e.png)
 
 Text…
 
