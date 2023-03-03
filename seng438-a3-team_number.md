@@ -16,7 +16,7 @@ Text…
 
 # 2 Manual data-flow coverage calculations for X and Y methods
 
-![image](https://user-images.githubusercontent.com/91904892/222856326-e5931034-b398-4b20-9d4b-3b09b752bc10.png)
+
 
 
 # 3 A detailed description of the testing strategy for the new unit test
