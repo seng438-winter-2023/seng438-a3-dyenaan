@@ -15,7 +15,66 @@
 The objective of this assignment was to get familiar with white-box coverage testing by using different testing tools to analyze methods. We made use of different coverage tools, covering three different coverage metrics to test the Range and DataUtilities classes. Data Flow Coverage was manually conducted as well which helped us gain better understanding of how coverage tools work. Finally, test suites were updated to improve coverage to fit the adequacy criteria.
 
 # 2 Manual data-flow coverage calculations for X and Y methods
+DataUtilities.calculateColumnTotal
+![image](https://user-images.githubusercontent.com/91904892/222872852-f039a4a5-6ff6-4cdb-aca1-caff56c7c2a1.png)
+Def-use sets per statement
+Def(1) = {data, column}, use(1) = {data}
+Def(2) = {total}
+Def(3) = {rowCount}, use(3) = {data}
+Def(4) = {r}, use(4) = {r, rowCount}
+Def(5) = {n}, use(5) = {data, r, column}
+Def(6) = {}, use(6) = {n}
+Def(7) = {}, use(7) = {total, n}
+Def(9) = {r2}, use(9) = {r2, rowCount}
+Def(10) = {n}, use(10) = { data, r2, column}
+Def(11) = {}, Use(11) = {n}
+Def(12) = {}, Use(12) = {total, n}
+Def(14) = {}, use(14) = {total}
+![image](https://user-images.githubusercontent.com/91904892/222872859-966709a8-4679-44cc-b5c7-5cc4ad3b2bde.png)
+DU-pairs per variable
+Variable	DU Pair
+Data	(1,1)(1,3) (1,5) (1,10) 
+column	(1,5) (1,10)
+total	(2,7) (2,12) (2,14)
+r	(4,4) (4,5) 
+rowCount	(3,4) (3,9) 
+n	(5,6) (5,7) (10,11) (10, 12)
+R2	(9,9) (9,10)
+![image](https://user-images.githubusercontent.com/91904892/222872879-aaacdfc4-2e0e-457b-a341-c8f0fc66bb03.png)
+Pairs covered per test case
+Test Case	Pairs Covered
+calculateColumnTotalForFourValuesTest	(1,3)(1,5)(2,7) (2,14) (3,4) (3,9) (4,4) (4,5) (5,6) (5,7)(9,9)
+calculateColumnTotalForTwoValuesTest	(1,3)(1,5)(2,7) (2,14) (3,4) (3,9) (4,4) (4,5) (5,6) (5,7)(9,9)
+nullDataTest	(1,1)
+![image](https://user-images.githubusercontent.com/91904892/222872892-e482b6c4-ddcc-4daf-af4d-98cdc7560e32.png)
+DU-pair Coverage Calculation
 
+
+Range.getLowerBound
+![image](https://user-images.githubusercontent.com/91904892/222873322-1a804bea-d6d7-408f-85fa-3949686da5aa.png)
+Def-use sets per statement
+Def-use set per statement
+D(1) =  {lower, upper} use(1) = {}
+D(2) = {} use(2) = {lower, upper}
+D(3) = {msg} , use(3) = {lower, upper}
+D(4) = {} use(4) = {lower}
+D(5) = {} use(5) = {msg}
+![image](https://user-images.githubusercontent.com/91904892/222873387-9e0ea014-b3ba-4791-af4f-c79841f5dfe2.png)
+DU-pairs per variable
+Variable	DU Pair
+lower	(1,2) (1,3) (1,4) 
+upper	(1,2) (1,3)
+msg	(3,5)
+![image](https://user-images.githubusercontent.com/91904892/222873403-5fe56c0e-6af8-400e-8577-06ce89a61d22.png)
+Pairs covered per test case
+Test Case	Pairs Covered
+testCorrectLowerBoundWithPositives	(1,2) (1,4)
+testCorrectLowerBoundWithNegatives	(1,2) (1,4)
+testCorrectLowerBound1	(1,2) (1,4)
+testCorrectLowerBound2	(1,2) (1,4)
+illegalArgumentTest	(1,2) (1,3) (1,4) (3,5)
+![image](https://user-images.githubusercontent.com/91904892/222873480-ee66292f-2755-4960-b295-b23627636185.png)
+DU-pair coverage calculation
 
 
 
