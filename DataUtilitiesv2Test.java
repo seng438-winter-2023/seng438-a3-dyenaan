@@ -1,6 +1,7 @@
 package org.jfree.data;
 
 import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 import java.security.*;
 import org.jfree.data.DataUtilities;
 import org.jmock.Expectations;
