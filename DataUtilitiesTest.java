@@ -1,14 +1,13 @@
 package org.jfree.data;
 
 import static org.junit.Assert.*;
-import static org.junit.Assert.assertEquals;
 import java.security.*;
 import org.jfree.data.DataUtilities;
 import org.jmock.Expectations;
 import org.jmock.Mockery;
 import org.junit.*;
 
-public class DataUtilitiesv2Test {
+public class DataUtilitiesTest {
 
 	Mockery mockingContext = new Mockery();
 	Mockery mockingContext1 = new Mockery();
@@ -30,7 +29,7 @@ public class DataUtilitiesv2Test {
 			{
 				one(kVal).getRowCount();
 				will(returnValue(1));
-				one(kVal).getValue(0, 0);
+				one(kVal).getValue(0, 0);   //(row, column)
 				will(returnValue(5));
 			}
 		});
@@ -75,7 +74,7 @@ public class DataUtilitiesv2Test {
 		});
 	}
 	
-//////////TESTS FOR calculateColumnTotal(Values2D, int): double
+////////// TESTS FOR calculateColumnTotal(Values2D, int): double ////////////////////
 	
 	@Test(expected = IllegalArgumentException.class)
 	public void nullDataTest() {
@@ -85,31 +84,28 @@ public class DataUtilitiesv2Test {
 	
 	
 	@Test
-	public void calcColumnTotalWithOneColumn() {
-		try {
+	public void calcColumnTotalWithOneValue() {
 			double kValResult = DataUtilities.calculateColumnTotal(kVal, 0);
 			assertEquals(5.0, kValResult, .000000001d);
-		}catch(Exception e) {
-			System.out.println("calcTotal2 with one row and one column");
-		}
 	}
 	
-//	@Test
-//	public void calcColumnTotalWithOutOfBoundsColumn() {
-//			double kValResult = DataUtilities.calculateColumnTotal(kVal, -1);
-//			assertEquals(0.0, kValResult, .000000001d);
-//	}
 	
-//////////TESTS FOR calculateColumnTotal(Values2D, int, int[]): double
+////////// TESTS FOR calculateColumnTotal(Values2D, int, int[]): double  ////////////////////
 	
 	@Test
-	public void calcColumnTotalForRowWithTwoValues() {
+	public void calcColumnTotalWithTwoValues() {
 			int[] row = new int[]{1};
 			double kValResult = DataUtilities.calculateColumnTotal(kVal1, 0, row);
 			assertEquals(2.5, kValResult, .000000001d);
 	}
 	
-//////////TESTS FOR calculateRowTotal(Values2D, int): double
+////////// TESTS FOR calculateRowTotal(Values2D, int): double  ////////////////////
+	
+	@Test
+	public void calcRowTotalWithOneValue() {
+			double kValResult = DataUtilities.calculateRowTotal(kVal3, 1);
+			assertEquals(10.0, kValResult, .000000001d);
+	}
 	
 	@Test
 	public void calcRowTotalWithTwoValues() {
@@ -117,16 +113,17 @@ public class DataUtilitiesv2Test {
 			assertEquals(10.0, kValResult, .000000001d);
 	}
 	
-//////////TESTS FOR calculateRowTotal(Values2D, int, int[]): double
+////////// TESTS FOR calculateRowTotal(Values2D, int, int[]): double  ////////////////////
 	
 	@Test
-	public void calcRowTotalWithOneColumn() {
+	public void calcRowTotalWithOneValueTest() {
 			int[] column = new int[]{1};
 			double kValResult = DataUtilities.calculateRowTotal(kVal2, 0, column);
 			assertEquals(2.5, kValResult, .000000001d);
 	}
 	
-//////////TESTS FOR clone(double[][]): double[][]
+	
+////////// TESTS FOR clone(double[][]): double[][]  ////////////////////
 	
 	@Test
 	public void cloneTest() {
@@ -137,6 +134,9 @@ public class DataUtilitiesv2Test {
 			double[][] actual = DataUtilities.clone(test);
 			assertArrayEquals(test, actual);
 	}
+	
+
+////////// TESTS FOR createNumberArray(double[]): Number[]  ////////////////////
 	
 	private double [] data = {1.1, 2.2};
 	
@@ -169,6 +169,8 @@ public class DataUtilitiesv2Test {
 		double expectedvalue = 2.2;
 		assertEquals(expectedvalue, DataUtilities.createNumberArray(data)[1]);
 	}
+	
+////////// TESTS FOR createNumberArray2D(double[][]): Number[][] ////////////////////
 	
 	private double [][] po_data = {{1.1, 2.2}, {3.3, 4.4}};
 	private double [][] ne_data = {{-1.1, -2.2}, {-3.3, -4.4}};
@@ -342,6 +344,8 @@ public class DataUtilitiesv2Test {
 		assertEquals(expectedvalue, actual[1][1]);
 	}
 	
+////////// TESTS FOR equal(double[][], double[][]): boolean ////////////////////
+	
 	@Test
 	// tests that two arrays are same with null values
 	public void testEqual1() {
@@ -422,6 +426,8 @@ public class DataUtilitiesv2Test {
 		boolean res = (a[1][1] == b[1][1]);
 		assertEquals(true, res);
 	}
+	
+////////// TESTS FOR getCumulativePercentages(KeyedValues): KeyedValues ////////////////////
 	
 	@Test
 	// test for when there's just one row of data
@@ -526,3 +532,4 @@ public class DataUtilitiesv2Test {
     }
 
 }
+
