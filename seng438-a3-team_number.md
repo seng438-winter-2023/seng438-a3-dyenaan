@@ -24,8 +24,31 @@ Text…
 Text…
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
+Range: Range(lower, upper)
+- The test cases for the Range constructor checked for invalid input, where the upper limit is less than the lower limit, which should throw a exception.
+- We also tested that the upper and lower bounds were correctly set
+- This resulted in 100% code coverage
 
-Text…
+Range: constrain(double)
+- The test cases first looked at if the range contained the value, which tests the if(!contains(value)) statement
+- Then the test cases looked at the two branches within the if statement, first where the value is greater than the upper bound then when it is less than the lower bound. This approach resulted in most of the code being covered
+
+Range: combine(Range, Range)
+- The tests cases we wrote first covered either of the two ranges being null
+- Then we wrote a test to cover the branch where neither range is null, which will result in a new range being created.
+- This approach led to 100% code coverage
+
+Range: scale(Range, double)
+- We wrote a test to first cover when the double being passed is less than 0, which should throw an exception
+- Then we covered the remaining code by a test that considered when the double is greater than 0
+- This resulted in 100% code coverage
+
+Range: equals(Object)
+- The first branch we covered was the if statement checking if the passed object is an instance of Range.
+- The next branch was testing to see if the upper bound of the passed object matches the calling objects upper bound
+- The next branch was similar to the previous test, but testing the lower bound
+- This approach resulted in 100% code coverage.
+
 
 # 5 A detailed report of the coverage achieved of each class and method (a screen shot from the code cover results in green and red color would suffice)
 ![Screenshot 2023-03-03 135330](https://user-images.githubusercontent.com/85323597/222856567-0f259f49-d16f-4a64-821f-fc64db85519e.png)
