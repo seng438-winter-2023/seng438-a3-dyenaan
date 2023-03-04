@@ -7,7 +7,7 @@
 | Student Names: |     |
 |Esohe Aideyan       |     |
 |Jack Barrie         |  30088832   |
-|Tamunomiete Brown   |  30130009   |
+|Tamunomiete Brown   |     |
 |Dyenaan Dapoet      |  30126758   |
 
 # 1 Introduction
@@ -30,7 +30,10 @@ DU-pairs per variable
 Pairs covered per test case
 
 ![image](https://user-images.githubusercontent.com/91904892/222872892-e482b6c4-ddcc-4daf-af4d-98cdc7560e32.png)
+
 DU-pair Coverage Calculation
+
+![image](https://user-images.githubusercontent.com/91904892/222874405-fce17ceb-7929-4a32-a4c6-9d7836919dc2.png)
 
 
 Range.getLowerBound
@@ -51,6 +54,7 @@ Pairs covered per test case
 ![image](https://user-images.githubusercontent.com/91904892/222873480-ee66292f-2755-4960-b295-b23627636185.png)
 DU-pair coverage calculation
 
+![image](https://user-images.githubusercontent.com/91904892/222874461-3f38b5de-104a-41fc-bbbe-8bf8c160fa74.png)
 
 
 # 3 A detailed description of the testing strategy for the new unit test
@@ -91,11 +95,12 @@ Range: equals(Object)
 Text…
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
-Requirements-based testing is better defined and easier to plan especially with working in a group, because test cases and conditions are gotten directly from requirements. However, it is not able to provide exhaustive testing i.e. more coverage compared to coverage-based test generation because it is scoped to just requirements.
-Coverage-based testing allows us determine test cases that will enable us acheive a certain coverage i.e. because coverage is subjective, we're able to deal with certain aspects of the system/object under test which leaves room for flexibility resulting in more coverage compared to requirements-based testing. The downfalls of this however is it could leave to conflicting opinions when working in a group and it is time consuming.
+
+Text…
 
 # 8 A discussion on how the team work/effort was divided and managed
-We decided that in this lab, we were all going to work on the assignment and then come together to review and learn from what each person resulted. This way, we were able to share ideas and knowledge and futher bring about clarification to the members who were confused about certain parts in the assignment. In the final collation, Dyenaan worked on the data flow diagram and calculations, while the rest of us collated and worked on the tests (Jack, Esohe and Tammie).
+
+Text…
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
