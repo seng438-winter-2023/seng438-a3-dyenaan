@@ -17,23 +17,31 @@ The objective of this assignment was to get familiar with white-box coverage tes
 # 2 Manual data-flow coverage calculations for X and Y methods
 DataUtilities.calculateColumnTotal
 Data flow graph
+
 ![image](https://user-images.githubusercontent.com/91904892/222872852-f039a4a5-6ff6-4cdb-aca1-caff56c7c2a1.png)
 Def-use sets per statement
+
 ![image](https://user-images.githubusercontent.com/91904892/222872859-966709a8-4679-44cc-b5c7-5cc4ad3b2bde.png)
 DU-pairs per variable
+
 ![image](https://user-images.githubusercontent.com/91904892/222872879-aaacdfc4-2e0e-457b-a341-c8f0fc66bb03.png)
 Pairs covered per test case
+
 ![image](https://user-images.githubusercontent.com/91904892/222872892-e482b6c4-ddcc-4daf-af4d-98cdc7560e32.png)
 DU-pair Coverage Calculation
 
 
 Range.getLowerBound
+Data Flow graph
 ![image](https://user-images.githubusercontent.com/91904892/222873322-1a804bea-d6d7-408f-85fa-3949686da5aa.png)
 Def-use sets per statement
+
 ![image](https://user-images.githubusercontent.com/91904892/222873387-9e0ea014-b3ba-4791-af4f-c79841f5dfe2.png)
 DU-pairs per variable
+
 ![image](https://user-images.githubusercontent.com/91904892/222873403-5fe56c0e-6af8-400e-8577-06ce89a61d22.png)
 Pairs covered per test case
+
 ![image](https://user-images.githubusercontent.com/91904892/222873480-ee66292f-2755-4960-b295-b23627636185.png)
 DU-pair coverage calculation
 
