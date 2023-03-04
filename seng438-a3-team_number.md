@@ -91,12 +91,11 @@ Range: equals(Object)
 Text…
 
 # 7 A comparison on the advantages and disadvantages of requirements-based test generation and coverage-based test generation.
-
-Text…
+Requirements-based testing is better defined and easier to plan especially with working in a group, because test cases and conditions are gotten directly from requirements. However, it is not able to provide exhaustive testing i.e. more coverage compared to coverage-based test generation because it is scoped to just requirements.
+Coverage-based testing allows us determine test cases that will enable us acheive a certain coverage i.e. because coverage is subjective, we're able to deal with certain aspects of the system/object under test which leaves room for flexibility resulting in more coverage compared to requirements-based testing. The downfalls of this however is it could leave to conflicting opinions when working in a group and it is time consuming.
 
 # 8 A discussion on how the team work/effort was divided and managed
-
-Text…
+We decided that in this lab, we were all going to work on the assignment and then come together to review and learn from what each person resulted. This way, we were able to share ideas and knowledge and futher bring about clarification to the members who were confused about certain parts in the assignment. In the final collation, Dyenaan worked on the data flow diagram and calculations, while the rest of us collated and worked on the tests (Jack, Esohe and Tammie).
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
