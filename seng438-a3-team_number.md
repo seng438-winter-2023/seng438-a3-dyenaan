@@ -25,6 +25,7 @@ Def-use sets per statement
 DU-pairs per variable
 
 ![image](https://user-images.githubusercontent.com/91904892/222872879-aaacdfc4-2e0e-457b-a341-c8f0fc66bb03.png)
+
 Pairs covered per test case
 
 ![image](https://user-images.githubusercontent.com/91904892/222872892-e482b6c4-ddcc-4daf-af4d-98cdc7560e32.png)
