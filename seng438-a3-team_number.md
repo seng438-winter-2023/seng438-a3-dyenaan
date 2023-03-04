@@ -5,7 +5,7 @@
 | Group 12:      |     |
 | -------------- | --- |
 | Student Names: |     |
-|Esohe Aideyan       |     |
+|Esohe Aideyan       |  30135560   |
 |Jack Barrie         |  30088832   |
 |Tamunomiete Brown   |     |
 |Dyenaan Dapoet      |  30126758   |
@@ -105,8 +105,9 @@ Text…
 
 # 9 Any difficulties encountered, challenges overcome, and lessons learned from performing the lab
 
-Text…
+During the course of this lab, we encountered a few difficulties which mainly stemmed from understanding what the lab was about. It took us so time to understand the lab and finally start working on it, to understand we all carried out personal research and readings to get familiar with some concepts and terminology used in this lab, from doing those readings we learned a lot about coverage tools and metrics which became very useful in completeing the lab.
+Another difficulty we encountered while working on the lab was understanding the features and properties of the various coverage tools our group decided to use for the lab. To overcome this problem, we utilized resources such as youtube and the coverage tools companies support documents to improve familiarity with the tools. We learnt how powerful and useful coverage tools are especially in discovering the scope of a test suite.
 
 # 10 Comments/feedback on the lab itself
 
-Text…
+This lab was very engaging and gave an inside look to some tools and practices Quality Assurance professionals would use in the span of their career. It also helped to solidify our understanding of coverage tools, metrics data-flow graphs etc. To improve this lab, I would suggest more information on some certain instructions as some of the instructions were vague and not very detailed, overall it was an amazing lab!
