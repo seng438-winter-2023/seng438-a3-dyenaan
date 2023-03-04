@@ -20,8 +20,7 @@ Text…
 
 
 # 3 A detailed description of the testing strategy for the new unit test
-
-Text…
+We approached the white box testing by first viewing the code coverage of the tests we wrote for assignment 2. If the coverage wasnt acceptable, we wrote additional tests for those methods. Then we worked on writing new tests to cover the remaining code in the classes Range and DataUtilities. We used EclEmma in eclipse to see the coverage. We then went method by method writing tests, until we reached sufficient coverage for the classes.
 
 # 4 A high level description of five selected test cases you have designed using coverage information, and how they have increased code coverage
 Range: Range(lower, upper)
