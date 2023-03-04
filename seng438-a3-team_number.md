@@ -12,7 +12,7 @@
 
 # 1 Introduction
 
-Text…
+The objective of this assignment was to get familiar with white-box coverage testing by using different testing tools to analyze methods. We made use of different coverage tools, covering three different coverage metrics to test the Range and DataUtilities classes. Data Flow Coverage was manually conducted as well which helped us gain better understanding of how coverage tools work. Finally, test suites were updated to improve coverage to fit the adequacy criteria.
 
 # 2 Manual data-flow coverage calculations for X and Y methods
 
