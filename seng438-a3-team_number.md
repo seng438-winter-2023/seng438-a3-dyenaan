@@ -52,6 +52,7 @@ DU-pairs per variable
 Pairs covered per test case
 
 ![image](https://user-images.githubusercontent.com/91904892/222873480-ee66292f-2755-4960-b295-b23627636185.png)
+
 DU-pair coverage calculation
 
 ![image](https://user-images.githubusercontent.com/91904892/222874461-3f38b5de-104a-41fc-bbbe-8bf8c160fa74.png)
