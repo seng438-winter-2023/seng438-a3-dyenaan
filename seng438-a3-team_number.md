@@ -7,7 +7,7 @@
 | Student Names: |     |
 |Esohe Aideyan       |     |
 |Jack Barrie         |  30088832   |
-|Tamunomiete Brown   |     |
+|Tamunomiete Brown   |  30130009   |
 |Dyenaan Dapoet      |  30126758   |
 
 # 1 Introduction
